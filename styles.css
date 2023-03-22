@@ -1,0 +1,507 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #E9EBD0;
+}
+
+@font-face{
+    font-family: Didot;
+    src:url(DidotRegular.ttf)
+}
+
+
+/*HERFRA ER TIL HEADER-------------------------------------------------------------*/
+#logo{
+    height: 70px;
+    padding-right: 750px;
+    margin-top: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: right;
+    background-color: #E9EBD0;
+    align-items: center;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: black; 
+    position: fixed;
+    top: 0px;
+    padding-right: 30px;
+    width: 100%;
+    z-index: 3;
+}
+
+.artikellink{
+    color: black;
+}
+
+a:hover{
+    color: #5C6320;
+}
+
+#abonner{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #A1AC39;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#abonner:hover{
+    background-color: #5C6320;
+}
+
+.menu{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 25px;
+}
+
+/*HERFRA ER TIL FORSIDE-------------------------------------------------------------*/
+
+#forsidebillede{
+    width: 100%;
+    margin-top: 80px;
+}
+
+h1{/*De grønne overskrift*/
+    font-family:Didot;
+    font-weight: lighter;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 110px;
+    color: #A1AC39;
+}
+
+h2{ /*Den hvide overskrift på billederne*/
+    font-family: Didot;
+    font-weight: 400;
+    font-size: 150px;
+    
+    position: absolute;
+    width: 1250px;
+    height: 300px;
+    left: 110px;
+    top: 300px;
+    text-align: center;
+    letter-spacing: 0.05px;
+    color: white;
+
+}
+
+h3{/*Kategori eller info med småt*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 10px;
+    padding: 15px;
+}
+
+h4{/*Underoverskrifter*/
+    position: absolute;
+    width: 300px;
+    height: 145px;
+
+    font-family: Didot;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin: auto;
+
+    color: #4E686F;
+}
+
+h5{ /*Brødteksten*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 30px;
+}
+
+#IntroTekstForside{
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    top: 800px;
+    padding-left: 240px;
+    padding-right: 240px;
+    
+    font-family: 'Tuffy';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+    margin: auto;
+    
+    color: #000000;
+}
+
+.lilleoverskriftslinje{
+    width: 200px;
+    height: 1px;
+    background-color:#A1AC39;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.lilleoverskriftslinje:hover{
+    color: #5C6320;
+    size: 10%;
+}
+
+#NyhederOverskrift{
+    position:relative;
+    background-color:#E9EBD0;
+    width: 380px;
+    margin: auto;
+    top: 160px;
+}
+
+.overskrift{
+    border-bottom: 1px solid #A1AC39;
+    width: 100%;
+}
+
+.overskrift > h1{
+    position:relative;
+    background-color: #E9EBD0;
+    width: 650px;
+    margin: auto;
+    padding: 30px;
+    top: 70px;
+}
+
+.kort{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top:200px;
+}
+
+.kort > section{
+    width: 350px;
+    height: 500px;
+    padding: 20px;
+    background-color:white;
+}
+
+
+.LilleArtikelLinje{
+    width: 40px;
+    height: 1px;
+    background-color:#4E686F;
+    margin: auto;
+}
+
+.ArtikelOverskrift:hover{
+    color: #5C6320;
+}
+
+/*HERFRA ER TIL VIRTUELT SHOWROOM ARTIKEL-----------------------------------------------------*/
+
+#lyserodstol{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-left: 180px;
+    padding-right: 180px;
+    z-index: 2;
+
+}
+#HvidUnderOverskrift{
+    position: absolute;
+    width: 500px;
+
+    font-family: Didot;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+
+    color: white;
+    z-index: 1;
+}
+
+#Showroomtekst{
+    background-color: #A1AC39;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 30px;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 900px;
+    padding: 90px;
+    margin-left: 340px;
+    z-index: 1;
+}
+
+#VirtueltShowroomGrønBox{
+    background-color: #A1AC39;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 100px;
+    margin-left: 340px;
+    top:200px;
+    padding: 100px;
+    z-index: 0;
+}
+
+.FørEfter{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    flex-wrap: wrap;
+    margin-top:100px;
+}
+
+.FørEfter > section{
+    width: 450px;
+    height: 500px;
+    padding: 20px;
+    background-color:white;
+}
+
+.OverskrifterFørOgEfter{
+    position: relative;
+    font-family: Didot;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    margin: auto;
+
+    color: #4E686F;
+}
+
+
+
+/*HERFRA ER TIL GUIDE ARTIKEL-------------------------------------------------------------*/
+
+#StorBlaaKommode{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+#guideartikel{
+    position: relative;
+    background-color: rgba(236, 211, 151, 1);
+    color:black;
+    font-size: 24px;
+    line-height: 35px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    flex-wrap: wrap;
+    top:-150px;
+    width: 800px;
+    height: 1500px;
+    padding: 100px;
+    margin-left: 340px;
+    z-index: 1;
+}
+
+#blaaoverskrift{
+    position: relative;
+    width: 380px;
+    margin: auto;
+
+    font-family: Didot;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+
+    color: #4E686F;
+}
+
+#tipbox{
+    position: absolute;
+    width: 992px;
+    height: 172px;
+    left: 240px;
+    top: 2200px;
+    z-index: 2;
+
+    background: #A1AC39;    
+}
+
+#HvidBrødtekst{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+}
+
+#HvidUnderOverskriftTIP{
+    margin-left: 25%;
+
+    position: absolute;
+    width: 450px;
+
+    font-family: Didot;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+
+    color: white;
+    z-index: 1;
+}
+
+.STEPoverskrift{
+    font-family:Didot;
+    font-style: normal;
+    font-size: 70px;
+    text-align: left;
+    width: 900px;
+    padding-left: 30px;
+
+
+    color: #4E686F;
+
+}
+
+.STEPtekst{
+    position: relative;
+    top:120px;
+   
+    font-family: Didot;
+    color:black;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    justify-content: space-around;
+    text-align: left;
+    
+    flex-wrap: wrap;
+    padding-left: 410px;
+    padding-top: 100px;
+    padding-right: 250px;
+    z-index: 1;
+}
+
+
+
+/*HERFRA ER TIL GENBRUGSGULD ARTIKEL------------------------------------------------*/
+
+#Genbrugsartikel{
+    position: relative;
+    background-color: #CADBE2;
+    color:black;
+    font-size: 24px;
+    line-height: 35px;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    flex-wrap: wrap;
+    top:250px;
+    width: 800px;
+    height: 1700px;
+    padding: 100px;
+    margin-left: 340px;
+    z-index: 1;
+}
+
+
+#GenbrugsguldOverskrift{
+    position: relative;
+    width: 400px;
+    top:-370px;
+    left:-20px;
+
+    font-family: Didot;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+
+    color: #4E686F;
+}
+
+#GenbrugsartikelGrønbox{
+    position: absolute;
+    background-color:#A1AC39;
+    display: flex;
+    top:150px;
+    left: 200px;
+    width: 600px;
+    height: 800px;
+    padding: 100px;
+    z-index: 0;
+}
+
+#GenbrugsartikelGulbox{
+    position: absolute;
+    background-color:rgba(242, 196, 119, 1);
+    display: flex;
+    top:350px;
+    right: 200px;
+    width: 600px;
+    height: 800px;
+    padding: 100px;
+    z-index: 0;
+}
+
+#GenbrugsguldBrødtekst{
+    position: relative;
+    margin-top: -750px;
+}
+
+#GenbrugsBillede{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    top:-450px;
+    z-index: 2;
+}
+
+/*HERFRA ER TIL FOOTER-------------------------------------------------------------*/
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    margin-top: 100px;
+    background: #A1AC39;
+}
+
+.footerdesign{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 90px;
+    color: white;
+    margin-left: 160px;
+    text-align: center;
+}
