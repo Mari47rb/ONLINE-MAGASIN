@@ -158,7 +158,6 @@ h5{ /*Brødteksten*/
 
 .lilleoverskriftslinje:hover{
     color: #5C6320;
-    size: 10%;
 }
 
 #NyhederOverskrift{
@@ -504,4 +503,5 @@ footer{
     color: white;
     margin-left: 160px;
     text-align: center;
+    justify-content:center;
 }
